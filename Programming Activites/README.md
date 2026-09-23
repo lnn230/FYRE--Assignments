@@ -8,12 +8,14 @@ Program3.py -- Made Sept 9th prints "Layla Nsereko" via variable
 
 Program4.py -- Made Sept 9th, blinks green led every .5 sec in Arduino
 
-Program5.py-- Made Sept 14th, blink led red when light is sensed and green when light is not sensed (not complete)
+Program5.py-- Made Sept 14th, blink led red when light is sensed and green when light is not sensed (not complete, AI used)
 
-Program6.py-- Made Sept 16th, Rotates servo arm 180 degrees when pressed 
+Program6.py-- Made Sept 16th, Rotates servo arm 180 degrees when pressed (AI used)
 
-Program7.py-- Made Sept 16th, recorded data from moisture sensor
+Program7.py-- Made Sept 16th, recorded data from moisture sensor (AI used)
 
 Summary Data.xlsx-- Made Sept 16th, Displays Data tables from automated and manual moisture sensor data (From Program7.py)
 
 moisture_data.csv-- Made Sept 16th, CSB data from Program7.py
+
+moisturelight1.py.pdf -- Made Sept 23rd, stepper motor 90 degrees when exposed to light or moisture (AI used)
