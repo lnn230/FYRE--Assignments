@@ -19,3 +19,8 @@ Summary Data.xlsx-- Made Sept 16th, Displays Data tables from automated and manu
 moisture_data.csv-- Made Sept 16th, CSB data from Program7.py
 
 moisturelight1.py.pdf -- Made Sept 23rd, stepper motor 90 degrees when exposed to light or moisture (AI used)
+
+bookpreservercodefinal.txt-- Made Sept.28th, triggers motor when light or moisture is sensed (AI used)
+
+
+
