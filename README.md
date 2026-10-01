@@ -2,4 +2,4 @@
 All assignments developed in Sensing the world module of ENR095
 
 ## Programing Activities
-September 9th : Basic printouts and blinking
+Holds all files made in class for FYRE module 
