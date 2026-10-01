@@ -6,6 +6,11 @@ This folder is for the Box Project work.
 Use this directory to store project files, notes, code, and related documentation for the Box Project.
 
 ## Notes
-- Add source files here as they are created.
-- Keep documentation up to date.
-- Organize related materials into subfolders when needed.
+moisturelight1.py.pdf -- Made Sept 23rd, stepper motor 90 degrees when exposed to light or moisture (AI used)
+
+bookpreservercodefinal.txt-- Made Sept.28th, triggers motor when light or moisture is sensed (AI used)
+
+bookpreservercodefinal.txt--- Made Sept 30th, Triggers servo arm and led when light or moisture is sensed  (AI used, not complete)
+
+Boxcode(FINAL).py-- Made Oct 1st, Working version of bookpreservercodefinal.txt (AI used)
+
