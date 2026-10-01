@@ -1,0 +1,71 @@
+from machine import Pin, ADC, PWM
+from time import sleep_ms
+
+# ==========================
+# SENSORS
+# ==========================
+
+light_sensor = ADC(Pin("A1"))
+moisture_sensor = ADC(Pin("A2"))
+
+# Adjust these based on actual readings
+LIGHT_THRESHOLD = 4000
+MOISTURE_THRESHOLD = 64000
+
+# ==========================
+# SERVO MOTOR
+# ==========================
+
+servo = PWM(Pin(8))
+servo.freq(50)
+
+current_angle = 0
+
+def set_servo(angle):
+    global current_angle
+
+    # Standard servo pulse range
+    pulse_min = 500      # 0 degrees
+    pulse_max = 2500     # 180 degrees
+
+    pulse = pulse_min + ((pulse_max - pulse_min) * angle / 180)
+
+    # Convert pulse width to duty cycle
+    duty = int((pulse / 20000) * 65535)
+
+    servo.duty_u16(duty)
+    current_angle = angle
+
+# Start at 0°
+set_servo(0)
+
+# ==========================
+# MAIN LOOP
+# ==========================
+
+while True:
+
+    light_value = light_sensor.read_u16()
+    moisture_value = moisture_sensor.read_u16()
+
+    print(
+        "Light:", light_value,
+        " Moisture:", moisture_value
+    )
+
+    dark_detected = light_value < LIGHT_THRESHOLD
+    moisture_detected = moisture_value < MOISTURE_THRESHOLD
+
+    if dark_detected or moisture_detected:
+
+        if current_angle != 90:
+            print("TRIGGERED - MOVING TO 90 DEGREES")
+            set_servo(90)
+
+    else:
+
+        if current_angle != 0:
+            print("NO TRIGGER - RETURNING TO 0 DEGREES")
+            set_servo(0)
+
+    sleep_ms(500)
