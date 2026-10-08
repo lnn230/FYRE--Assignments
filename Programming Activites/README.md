@@ -18,3 +18,13 @@ Summary Data.xlsx-- Made Sept 16th, Displays Data tables from automated and manu
 
 moisture_data.csv-- Made Sept 16th, CSB data from Program7.py
 
+ENGR Reflection #1- Layla Nsereko.docx -- Reflection on engineering
+
+Materials Reflection- Layla Nsereko.docx -- Reflection on materials
+
+Microcontrollers reflection- Layla Nsereko.docx -- Reflection on microcontrollers
+ENGR Reflection #1- Layla Nsereko.docx -- Reflection on engineering
+
+Materials Reflection- Layla Nsereko.docx -- Reflection on materials
+
+Microcontrollers reflection- Layla Nsereko.docx -- Reflection on microcontrollers
